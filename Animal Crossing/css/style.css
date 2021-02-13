@@ -1,10 +1,6 @@
 
 :root {
 
-  --red: #EA1D22;
-  --red-dark: #B31317;
-  --red-light: #F02A2F;
-
   --white: #EDF1F7;
   --white-dark: #E5E9EF;
   --white-light: #F4F7FB;
@@ -111,14 +107,6 @@ svg{
   width: 0%;
   height: 2px;
   background: linear-gradient(270deg, var(--yellow)    0%, rgba(196, 196, 196, 0) 102.98%);
-}
-
-.bg{
-  background-image: url(../wallpapers.jpg);
-}
-
-.bg{
-  background-image: url(../wallpapers.jpg);
 }
 
 .nav-link:hover::after{
@@ -317,6 +305,8 @@ svg{
 }
 
 
+
+
 @media screen and (max-width: 960px){
   .container{
     flex-direction: column;
@@ -330,11 +320,15 @@ svg{
   }
 
   .nav-list{
-    display: none;
+    display: block;
   }
 
   .nav-menu{
     display: none;
+  }
+  
+  .nav-social{
+    padding-top: 8px;
   }
 
   .bx{
@@ -355,10 +349,10 @@ svg{
   }
 
   .bg{
-    background-image: url(../wallpapers.jpg) ;
+    background-image: url(../img/background.jpg) ;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden;
   }
   
@@ -369,7 +363,7 @@ svg{
     left: 0;
   
     width: 100%;
-    height:100vh;
+    height:180%;
   
     position: absolute;
 
@@ -390,7 +384,16 @@ svg{
   .btn{
     top: -10px;
   } 
+
+  .bg::after{
+  
+    width: 100%;
+    height:160%;
+  }
 }
+
+
+
 
 
 
