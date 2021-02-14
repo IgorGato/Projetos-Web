@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="corpo-calculadora">
+        <input type="text" id="resultado"  placeholder="Esperando operação">
+        <br>
+        <div class="linha">
+            <input type="button"  value="1" onclick="soma1()">
+            <input type="button"  value="2" onclick="soma2()">
+            <input type="button"  value="3" onclick="soma3()">
+            <input type="button"  value="4" onclick="soma4()">
+        </div>
+        <div class="linha">
+            
+            <input type="button" value="5" onclick="soma5()">
+            <input type="button" value="6" onclick="soma6()">
+            <input type="button" value="7" onclick="soma7()">
+            <input type="button" value="8" onclick="soma8()">
+        </div>
+        <div class="linha">
+            
+            <input type="button" value="9" onclick="soma9()">
+            <input type="button" value="0" onclick="soma0()">
+            <input type="button" value="." onclick="ponto()">
+            <input type="button" class="operacao" value="C" onclick="apagar()">
+        </div>
+        <div class="linha" >
+            <input type="button" class="operacao" value="+" onclick="adicao()">
+            <input type="button" class="operacao" value="-" onclick="subtracao()">
+            <input type="button" class="operacao" value="*" onclick="multiplicacao()">
+            <input type="button" class="operacao" value="/" onclick="divisao()">
+        </div>
+        <div class="linha">
+            <input type="button" value="=" class="resultado" style="width: 150px"  onclick="resultado()">
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
