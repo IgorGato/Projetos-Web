@@ -23,9 +23,8 @@ function resultado(){
     } catch (error) {
         result.value ='Insira caracteres válidos'
         setTimeout(function(){ result.value= ''} , 1300)
-    }
-        
-    }
+    }    
+}
 
 
 
