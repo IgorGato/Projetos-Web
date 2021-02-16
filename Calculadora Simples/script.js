@@ -18,12 +18,9 @@ function multiplicacao(){result.value+='*'}
 function divisao(){result.value+='/'}
 function apagar(){result.value=''}
 function resultado(){
-    try {
-        result.value=eval(result.value)
-    } catch (error) {
-        result.value ='Insira caracteres válidos'
-        setTimeout(function(){ result.value= ''} , 1300)
-    }    
+    try {result.value=eval(result.value)} 
+	catch (error) {result.value ='Insira caracteres válidos'
+        setTimeout(function(){ result.value= ''} , 1300)}    
 }
 
 
